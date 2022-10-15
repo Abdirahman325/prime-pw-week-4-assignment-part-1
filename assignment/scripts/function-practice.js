@@ -34,16 +34,22 @@ function helloName( name ) {
 console.log( 'running helloName:', helloName());
 
 // 3. Function to add two numbers together & return the result
-function addNumbers( firstNumber ) {
+function addNumbers( firstNumber, secondNumber) {
+  console.log( 'in addNumbers:', firstNumber, secondNumber);
+  let answer = firstNumber + secondNumber;
+  return answer;
   // return firstNumber + secondNumber;
 }
-
+console.log( 'running addNumbers with 9 & 10:', addNumbers(9, 10) );
 
 // 4. Function to multiply three numbers & return the result
-function multiplyThree( ){
-
+function multiplyThree( firstNumber, secondNumber, thirdnumber){
+console.log( ' in multplyThree:', firstNumber, secondNumber, thirdnumber);
+let answer = firstNumber * secondNumber * thirdnumber;
+return answer;
 }
 
+console.log( ' running multiplyThree with 4 & 8 & 5:', multiplyThree(4, 8, 5));
 
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
