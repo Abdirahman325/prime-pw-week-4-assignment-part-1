@@ -5,20 +5,33 @@ console.log('***** Function Practice *****')
 // to test it and display the result
 
 // 1. Function to return 'Hello World!'
+
 function hello() {
-  return 'Hello World!';
+  console.log( 'in hello' );
 }
+ 
+function returner() {
+  console.log( ' in returner' );
+  let answer = 'Hello world!';
+  return answer;
+ }
 // Call the function to test
 console.log('Test - should say "Hello World!"', hello());
 
+returner();
+
+console.log( 'running returner:', returner());
 
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
 function helloName( name ) {
-  return;
+  console.log( 'in helloName:', name );
+  let answer = ' Hello Abdirahman!';
+  return answer;
 }
 // Remember to call the function to test
 
+console.log( 'running helloName:', helloName());
 
 // 3. Function to add two numbers together & return the result
 function addNumbers( firstNumber ) {
