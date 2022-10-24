@@ -25,7 +25,7 @@ console.log( 'running returner:', returner());
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
 function helloName( name ) {
-  console.log( 'in helloName:', name );
+  console.log( 'running helloName:', helloName('Abdirahman') );
   let answer = ' Hello Abdirahman!';
   return answer;
 }
@@ -77,7 +77,7 @@ console.log( ' running isPositive:', isPositive(-7));
 let wings = [ 'lemon pepper', 'garlic parmaesean', 'buffalo', 'mild']
 function getLast( wings ) {
 if (wings.length > 0){
-  return true;
+  return wings[wings.length - 1];
 }
  else {
   return false
